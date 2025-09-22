@@ -1,0 +1,9 @@
+from my_math import my_factorial
+def main():
+  for num in [5, 0, -3]:
+    try:
+      print(f"Факториал {num} равен {my_factorial(num)}")
+    except ValueError as e:
+      print(f"Ошибка: {e}")
+if __name__ == "__main__":
+  main()
