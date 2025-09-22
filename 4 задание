@@ -1,0 +1,11 @@
+def my_factorial(n):
+  if n < 0:
+    raise ValueError("Факториал не определен для отрицательных чисел")
+  result = 1
+  for i in range(2, n + 1):
+    result *= i
+  return result
+
+if _name_ == "_main_":
+    print("Пример использования my_factorial:")
+    print("5! =", my_factorial(5))
