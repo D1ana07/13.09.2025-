@@ -1,0 +1,5 @@
+from math import factorial
+def compute_factorial(n):
+  return factorial(n)
+num = 40
+print(f"факториал числа {num} равен {compute_factorial(num)}")
